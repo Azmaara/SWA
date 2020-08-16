@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>SWA Form Demo</title>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+<link href='' rel='stylesheet'>
+<style> body {
+background-color: #eee
+ }
+
+ .form-control:focus {
+     color: #495057;
+     background-color: #fff;
+     border-color: #80bdff;
+     outline: 0;
+     box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+ }
+
+ .btn-secondary:focus {
+     box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+ }
+
+ .close:focus {
+     box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+ }
+
+ .mt-200 {
+     margin-top: 300px
+ }
+
+
+
+ @media screen and (min-width: 992px) {
+  
+.modal-body{
+  height: 1080px;
+  width: 1300px;
+}
+.modal-dialog{
+
+  width: 1300px;
+
+}
+
+.modal-content{
+
+width: 1300px;
+
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  right:0%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+}
+
+.color-box {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.tip-box {
+    color: #2e5014;
+    background: #d5efc2;
+}
+
+ .radio{
+    display: none;
+}
+.radio-custom{
+    position: relative;      
+    width: 25px;             
+    height: 23px;           
+    border: 2px solid #8A3219;
+    border-radius: 50%;
+}
+.radio-custom,.label{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.radio:checked + .radio-custom::before{
+    content: "";             
+    display: block;          
+    position: absolute;      
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background: #8A3219;    
+    border-radius: 50%;
+}
+.label{
+    font-family:Helvetica;
+}
+
+.info-tab {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.tip-icon {
+    background: #92CD59;
+}
+
+.note-icon {
+    background: #47ADE0;
+}
+
+.shadow {
+    background: #F7F8F9;
+    padding: 3px;
+    margin: 10px 0;
+}
+
+
+.note-icon::before {
+    font-size: 23px;
+    content: "\e911";
+    top: 8px;
+    left: 8px;
+}
+.info-tab::before, .info-tab::after {
+    display: inline-block;
+    color: #fff;
+    line-height: normal;
+    font-family: "icomoon";
+    position: absolute;
+}
+
+
+
+
+ </style>
+                                
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script type='text/javascript'>$(document).ready(function(){
+
+$('#smartwizard').smartWizard({
+selected: 0,
+theme: 'dots', 
+autoAdjustHeight:true,
+transitionEffect:'fade',
+showStepURLhash: false,
+
+});
+
+});</script>
+</head>
+<body>
+<link href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1581152092/smartwizard/smart_wizard.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1581152092/smartwizard/smart_wizard_theme_dots.min.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1581152197/smartwizard/jquery.smartWizard.min.js"></script>
+ <div class="container">
+     <div class="row d-flex justify-content-center mt-200"> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Click SWA’s 7-Step SAFE-ACT Process </button> </div> <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+             <div class="modal-content " >
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Stop Work Authority (SWA) Form Demo</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                 </div>
+                 <div class="modal-body">
+                     <div id="smartwizard">
+                         <ul>
+                             <li><a href="#step-1">Step 1<br /><small>Stop the work</small></a></li>
+                             <li><a href="#step-2">Step 2<br /><small>Alert the key stakeholders</small></a></li>
+                             <li><a href="#step-3">Step 3<br /><small>Fill and submit the SWA report</small></a></li>
+                             <li><a href="#step-4">Step 4<br /><small>Evaluate the risk(s) and control measures</small></a></li>
+                             <li><a href="#step-5">Step 5<br /><small>Apply Corrective Actions</small></a></li>
+                             <li><a href="#step-6">Step 6<br /><small>Confirm and resume work</small></a></li>
+                             <li><a href="#step-7">Step 7<br /><small>Tracking and followup</small></a></li>
+                         </ul>
+                         <div>
+                             <div id="step-1">
+                                 <hr>
+                                <div class="row"> </div>
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                    <label>
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">Work has been Stopped</span>
+                                    </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                    <label>
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label">Work has not been stopped</span>
+                                    </label>
+                                </div>
+                                 </div>
+                                 <div class="color-box">
+                                    <div class="shadow">
+                                        <div class="info-tab tip-icon" title="Useful Tips"><i></i></div>
+                                        <div class="tip-box">
+                                            <p><strong>Note:</strong> Stating the use of the Stop Work Authority is mandatory in order to convey the seriousness of the concern and the related expectations to follow the process.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                 
+                             </div>
+                             <div id="step-2">
+                                <hr>
+                                <div class="row"> 
+                                    <div class="color-box">
+                                        <div class="shadow">
+                                            <div class="info-tab note-icon" title="Important Notes">
+                                                
+                                                
+                                                <i>
+                                                    
+                                                </i>
+                                                
+                                            </div>
+                                            <div class="note-box">
+                                                <p><strong>Note:</strong> Inform the key stakeholders immediately, including but not limited to:
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                   
+                                     <div class="col-md-6"> 
+                                         
+                                        
+                                        <ul>
+                                            
+                                            <li class="none"><input type="checkbox" name="course"> Worksite supervisor</li>
+                                            <li><input type="checkbox" name="course"> Worksite HSSE personnel (as applicable)</li>
+                                            <li><input type="checkbox" name="course"> Controlling Team Representative</li>
+                                            </ul> </div>
+                                     
+                                 </div>
+                                
+                                
+                             </div>
+                             <hr>
+                            
+                             <div id="step-3" class="">
+                                <div class="alert alert-info" >
+                                    
+                                    <article><em> SECTION A</em></article>
+                                </div>
+                                 <div class="row">
+                                     <div class="col-md-6"> <input type="text" class="form-control" placeholder="SWA Initiator Name" required> </div>
+                                     <div class="col-md-4"> <input type="text" class="form-control" placeholder="KOC No" required> </div>
+                                 </div>
+                                 <div class="row mt-3">
+                                     <div class="col-md-4"> <input type="text" class="form-control" placeholder="Work Location" required> </div>
+                                     <div class="col-md-4"> <input type="text" class="form-control" placeholder="Work Activity" required> </div>
+                                     <div class="col-md-4"> <input type="text" class="form-control" placeholder="Work Site Supervisor" required> </div>
+                                    
+                                 </div>
+
+                                 <div class="row mt-3">
+                                
+                                    <div class="col-md-6"> 
+                                        <select class="form-control" id="Controlling" placeholder="Controlling Team">
+                                        <option class="dropdown-item active">Controlling Team</option>
+                                        <option>CH11</option>
+                                        <option>CH21</option>
+                                        <option>CH31</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        
+                                        <select class="form-control" id="exampleFormControlSelect1" placeholder="ContractNo & Title">
+                                        <option class="dropdown-item active">Contract No. & Title:</option>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                        <option>D</option>
+                                      </select> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-1">Date</div>
+                                    <div class="col-md-3"> <input type="date" name="name" value="2020-08-16"> </div>
+                                    <div class="col-sm-1">Time</div>
+                                    <div class="col-md-3"> <input type="time" name="name" value="12:51:00"></div>
+                                </div>
+                              
+                                <div class="row mt-3">
+                                    <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">Reason for SWA Action</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                      </div>
+                                </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                
+                                    
+                                    <div class="col-md-1"><label id="coding-skills">Status of SWA </label></div>
+                                    <div class="col-md-3"><input type="checkbox" id="A"  /> Agreed to Stop</div>
+                                  
+                                    <div class="col-md-3"><input type="checkbox" id="B"  /> Agreed to Stop but Conflict Resolution Required </div> 
+                                   
+                                    <div class="col-md-3"><input type="checkbox" id="C" /> Disagreed to Stop and URGENT Conflict Resolution Required</div>
+
+
+                                    
+                                   
+                                
+                                </div>
+                                
+                            </div>
+                             <div id="step-4" class="">
+                                 <div class="row">
+                                     <div class="col-md-12"> <span>Please Define</span> </div>
+                                 </div>
+                             </div>
+
+                             <div id="step-5" class="">
+                                <div class="row">
+                                    <div class="col-md-12"> <span>Please Define</span> </div>
+                                </div>
+                            </div>
+
+
+                            <div id="step-6" class="">
+                                <div class="row">
+                                    <div class="col-md-12"> <span>Please Define</span> </div>
+                                </div>
+                            </div>
+                            
+                            <div id="step-7" class="">
+                                <div class="row">
+                                    <div class="col-md-12"> <span>Please Define</span> </div>
+                                </div>
+                            </div>
+
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+                            </body>
+                        </html>
