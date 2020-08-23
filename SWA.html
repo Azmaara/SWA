@@ -35,7 +35,7 @@ background-color: #eee
  @media screen and (min-width: 992px) {
   
 .modal-body{
-  height: 1080px;
+  height: 1410px;
   width: 1300px;
 }
 .modal-dialog{
@@ -142,6 +142,10 @@ width: 1300px;
 }
 
 
+hr.class-2 { 
+            border-top: 3px double #8c8b8b; 
+        } 
+
 
 
  </style>
@@ -205,7 +209,7 @@ showStepURLhash: false,
                                     </label>
                                 </div>
                                  </div>
-                                 <div class="color-box">
+                                  <div class="color-box">
                                     <div class="shadow">
                                         <div class="info-tab tip-icon" title="Useful Tips"><i></i></div>
                                         <div class="tip-box">
@@ -217,7 +221,7 @@ showStepURLhash: false,
                                  
                              </div>
                              <div id="step-2">
-                                <hr>
+                                <hr class="class-2">
                                 <div class="row"> 
                                     <div class="color-box">
                                         <div class="shadow">
@@ -253,7 +257,7 @@ showStepURLhash: false,
                                 
                                 
                              </div>
-                             <hr>
+                             <hr class="class-2" >
                             
                              <div id="step-3" class="">
                                 <div class="alert alert-info" >
@@ -289,7 +293,7 @@ showStepURLhash: false,
                                         <option>A</option>
                                         <option>B</option>
                                         <option>C</option>
-                                        <option>D</option>
+                                        <option>D</option>''
                                       </select> </div>
                                 </div>
                                 <div class="row mt-3">
@@ -313,7 +317,7 @@ showStepURLhash: false,
                                 <div class="row mt-3">
                                 
                                     
-                                    <div class="col-md-1"><label id="coding-skills">Status of SWA </label></div>
+                                    <div class="col-md-1"><label id="coding-skills" class="badge badge-secondary">Status of SWA </label></div>
                                     <div class="col-md-3"><input type="checkbox" id="A"  /> Agreed to Stop</div>
                                   
                                     <div class="col-md-3"><input type="checkbox" id="B"  /> Agreed to Stop but Conflict Resolution Required </div> 
@@ -325,28 +329,178 @@ showStepURLhash: false,
                                    
                                 
                                 </div>
+                              
+                               
+
+                                <div class="alert alert-success" >
+                                    
+                                    <article><em> SECTION B</em></article>
+                                </div>
+
+                                <div class="row mt-3">
                                 
+                                    
+                                    <div class="col-md-3"><label id="Ver-AssetDir" class="badge badge-secondary">Verification by Asset/ Directorate/ Area HSSE Team</label></div>
+                                    <div class="col-md-3"><input type="checkbox" id="VCA"  /> Verified for Corrective Actions</div>
+                                  
+                                    <div class="col-md-3"><input type="checkbox" id="VFW"  /> Verified for Work to Resume </div> 
+                                   
+                                    <div class="col-md-3"><input type="checkbox" id="CR" /> Conflict Resolution</div>
+
+
+                                    
+                                   
+                                
+                                </div>
+                               
+                                <hr class="class-2">
+                              
+                                <div class="row mt-3">
+                                    <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">Remarks</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                      </div>
+                                </div>
+                                </div>
+                              
+                                <div class="row">
+                                    
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Name" required> </div>
+                                    <div class="col-md-4"> <input type="text" class="form-control" placeholder="KOC No" required> </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Designation" required> </div>
+                                    <div class="row">
+                                        <div class="col-md-12"></div>
+                                    </div>
+                                    <div class="col-md-4"> <input type="text" class="form-control" placeholder="Team" required> </div>
+                                </div>
+
+                                <div class="row">
+                                </div>
+                                &nbsp;&nbsp; 
+                            <div class="alert alert-primary" >
+                                    
+                                <article><em> SECTION C</em></article>
                             </div>
+
+                            <div class="row">
+                            
+                                
+                                <div class="col-md-4"><label id="ApprovedBy" class="badge badge-secondary">Approved by: Team Leader HSSE (as per case) in case of conflict</label></div>
+                                <div class="col-md-3"><input type="checkbox" id="CR"  />Conflict Resolved</div>
+                                <div class="col-md-3"><input type="checkbox" id="CE"  /> Conflict escalated for Resolution </div> 
+                                
+
+                                
+                               
+                            
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4"> <input type="text" class="form-control" placeholder="Name" required> </div>
+                                <div class="col-md-4"> <input type="text" class="form-control" placeholder="Designation" required> </div>
+                                <div class="col-md-4"> <input type="text" class="form-control" placeholder="E-Signature" required> </div>
+                            </div>
+
+                            <div class="row">
+                            </div>
+                            &nbsp;&nbsp; 
+                        <div class="alert alert-warning" >
+                                
+                            <article><em> SECTION D</em></article>
+                        </div>
+                        
+                        <div class="row">
+                            
+                                
+                            <div class="col-md-2"><h4><label id="ver" class="badge badge-secondary" >Verification</label></h3></div>
+                            <div class="col-md-2"><input type="checkbox" id="STW"  /> Stop Work</div>
+                            <div class="col-md-2"><input type="checkbox" id="CAT"  /> Corrective Action </div> 
+                            <div class="col-md-2"><input type="checkbox" id="ROW"  /> Resumption of Work </div> 
+
+                            
+                           
+                        
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Corrective Actions Taken</span>
+                                </div>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                              </div>
+                        </div>
+                        </div>
+                        <hr class="class-2">
+                        <div class="row mt-3">
+                                
+                                    
+                            <div class="col-md-3"><label id="Ver-AssetDir" class="badge badge-secondary">Work Status</label></div>
+                            <div class="col-md-3"><input type="checkbox" id="OHW"  /> On Hold / Awaiting conflict resolution</div>
+                          
+                            <div class="col-md-3"><input type="checkbox" id="ICA"  /> Implementing Corrective Action </div> 
+                           
+                            <div class="col-md-3"><input type="checkbox" id="RCR" /> Resumed & Close Report</div>
+
+
+                            
+                           
+                        
+                        </div>
+                        <hr class="class-2">
+                        <div class="row mt-3">
+                                
+                                    
+                            <div class="col-md-3"><label id="Ver-AssetDir" class="badge badge-secondary">Confirmed by: Team Leader of Controlling Team  </label></div>
+                            <div class="col-md-3"><input type="checkbox" id="VCA"  /> Verified for Corrective Actions</div>
+                          
+                            <div class="col-md-3"><input type="checkbox" id="VFW"  /> Verified for Work to Resume </div> 
+                           
+                            <div class="col-md-3"><input type="checkbox" id="CR" /> Conflict Resolution</div>
+
+
+                            
+                           
+                            <hr class="class-2">
+                        </div>
+
+
+
+                        </div>
                              <div id="step-4" class="">
+                                <hr class="class-2">
                                  <div class="row">
                                      <div class="col-md-12"> <span>Please Define</span> </div>
                                  </div>
+                                 <hr class="class-2">
                              </div>
 
                              <div id="step-5" class="">
+                                <hr class="class-2">
                                 <div class="row">
                                     <div class="col-md-12"> <span>Please Define</span> </div>
                                 </div>
+                                <hr class="class-2">
                             </div>
 
 
                             <div id="step-6" class="">
+                                <hr class="class-2">
                                 <div class="row">
                                     <div class="col-md-12"> <span>Please Define</span> </div>
                                 </div>
+                                <hr class="class-2">
                             </div>
                             
                             <div id="step-7" class="">
+                                <hr class="class-2">
                                 <div class="row">
                                     <div class="col-md-12"> <span>Please Define</span> </div>
                                 </div>
